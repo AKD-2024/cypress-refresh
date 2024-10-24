@@ -20,7 +20,7 @@ describe("Release App", () => {
     cy.wait(2000);
     refreshLogicPage.start();
     cy.window().then((win) => {
-      const finalCount = win.localStorage.getItem("ref_count");
+      const finalCount = win.localStorage.getItem("refCount");
       cy.log(`Final refresh count: ${finalCount}`);
       expect(finalCount).to.be.null;
     });
