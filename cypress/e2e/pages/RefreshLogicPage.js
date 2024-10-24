@@ -1,6 +1,6 @@
 export class RefreshLogicPage {
     constructor() {
-        this.max_refresh = 5;
+        this.max_refresh = 15;
         this.interval = 10000;
         this.refCount = parseInt(localStorage.getItem('refCount')) || 0;
     }
